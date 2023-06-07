@@ -28,9 +28,6 @@ public class DataGenerate {
 
     public static String generateCity(String local) {
         Faker faker = new Faker(new Locale(local));
-
-        // TODO: добавить логику для объявления переменной city и задания её значения, генерацию можно выполнить
-        // с помощью Faker, либо используя массив валидных городов и класс Random
         return faker.address().city();
     }
 
